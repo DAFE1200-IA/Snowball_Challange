@@ -3,14 +3,10 @@
     box-sizing: border-box;
 }
 
-<<<<<<< Updated upstream
 :root {
     --blue: rgb(50, 86, 93);
     --green: rgb(15, 80, 63);
 }
-=======
-
->>>>>>> Stashed changes
 
 body {
     margin: 0;
