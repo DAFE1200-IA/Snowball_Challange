@@ -3,6 +3,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --blue: rgb(50, 86, 93);
+    --green: rgb(15, 80, 63);
+}
+
 body {
     margin: 0;
     background: #222;
