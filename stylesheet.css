@@ -1,0 +1,14 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #222;
+    font-family: 'railway' sans-serif;
+    font-weight: 400;
+}
+
+
+/* Navigation-bar and Logo */ 
