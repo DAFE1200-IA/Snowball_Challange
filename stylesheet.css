@@ -3,12 +3,66 @@
     box-sizing: border-box;
 }
 
+:root {
+    --blue: rgb(50, 86, 93);
+    --green: rgb(15, 80, 63);
+}
+
 body {
     margin: 0;
-    background: #222;
-    font-family: 'railway' sans-serif;
+    background: rgb(241, 241, 232);
+    font-family: 'Railway', sans-serif;
     font-weight: 400;
 }
 
 
 /* Navigation-bar and Logo */ 
+
+header {
+    background-color: rgb(15, 80, 63);
+    text-align: center;
+    position: fixed;
+    z-index: 999; 
+    width: 100%;
+}
+
+.logo {
+    color: rgb(241, 241, 232);
+    font-weight: 100;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+nav {
+    background-color: rgb(50, 86, 93);
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    width: 100%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+nav a {
+    color: rgb(241, 241, 232); 
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 100;
+}
+
+nav a:hover {
+    color: black;
+
+}
