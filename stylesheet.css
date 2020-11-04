@@ -26,14 +26,14 @@ header {
 }
 
 .logo {
-    text-align: right;
-    margin-right: 0.5em;   
+    text-align: left;
+    margin-left: 0.8em; 
 }
 
 .logo a {
     text-decoration: none;
     color: rgb(241, 241, 232);
-    font-size: 1.1em;
+    font-size: 0.7em;
     letter-spacing: 0.2em;
     font-weight: 100;
     text-transform: uppercase;
@@ -45,7 +45,7 @@ header {
 .nav-toggle {
     position: absolute !important;
     top: -9999px !important;
-    left: -9999px !important;    
+    right: -9999px !important;    
 }
 
 .nav-toggle:focus ~ .nav-toggle-label {
@@ -55,8 +55,8 @@ header {
 .nav-toggle-label {
     position: absolute;
     top: 0;
-    left: 0;
-    margin-left: 1em;
+    right: 0;
+    margin-right: 2em;
     height: 100%;
     display: flex;
     align-items: center;
@@ -90,9 +90,9 @@ header {
 nav {
     background-color: var(--green);
     position: absolute;
-    text-align: left;
+    text-align: right;
     top: 100%;
-    left: 0;
+    right: 0;
     width: 100%;
     transform: scale(1, 0);
     transform-origin: top;
@@ -106,11 +106,15 @@ nav ul {
 }
 
 nav li {
-    margin-bottom: 2em;
-    margin-left: 1em;
+    margin-bottom: 0em;
+    margin-right: 2em;
+    display: inline-block;
 }
 
 nav a {
+    position: relative;
+    right: 7em;
+    bottom: 4.3em;
     color: rgb(241, 241, 232); 
     text-decoration: none;
     font-size: 0.7em;
@@ -143,66 +147,9 @@ nav a:hover {
 /* Responsive rules */ 
 
 @media screen and (min-width: 800px) {
+
+    .logo a {
+        
+    }
  
-    .nav-toggle-label{
-        display: none;
-    }
-
-    header {
-        display: grid;
-        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-    }
-
-    .logo {
-        font-size: 1.7em;
-        
-    }
-
-    nav {
-        /* Removed the animation, did not use all: unset; while this does not support Edge */
-        position: relative;
-        text-align: left;
-        transition: none;
-        transform: scale(1,1);
-        background: none;
-        top: initial;
-        left: initial;
-        /* end Edge support lines */
-        
-        display: flex; 
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    nav ul {
-        display: flex; 
-    }
-
-    nav li {
-        margin-left: 3em;
-        margin-bottom: 0em;
-    }
-
-    nav a {
-        opacity: 1;
-        position: relative;
-        font-size: 0.54em;
-    }
-
-    nav a::before {
-        content: '';
-        display: block;
-        height: 1px;
-        background: black;
-        position: absolute;
-        bottom: -0.75em;
-        left: 0;
-        right: 0;
-        transform: scale(0, 1);
-        transition: transform ease-in-out 250ms;
-    }
-
-    nav a:hover::before {
-        transform: scale(1,1);
-    }
 }
