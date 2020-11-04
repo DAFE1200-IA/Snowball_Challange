@@ -20,6 +20,100 @@
             </ul>
         </nav>
     </header>
+
+    <main>
+        <!-- Background image -->
+        <img src="AdobeStock_cityview.jpeg" alt="Picture of houses in Santorini, Greece" width="100%" height="auto">
+        
+        <!-- Dropdown menu for booking screen traveling -->
+        <div class="bookingForm">
+        <h2>Book your screen travel now</h1>
+        
+        <form action="booking.html">
+            <div class="toAndFrom">
+            <label for="travelFrom">Travel from:</label>
+                <br>
+            <input type="text" id="travelFrom" name="travelFrom">
+                <br>
+                <br>
+            <label for="travelTo"> Travel to: </label>
+                <br>
+            <input list="travelTo" type="text" name="travelTo">
+            <datalist id="travelTo">
+                <select>
+                <option value="Rome">Rome</option>
+                <option value="New York">New York</option>
+                <option value="Santorini">Santorini</option>
+                </select>
+            </datalist>
+                <br>
+                <br>
+            </div>
+            
+            <div class="timePackage">
+            <label for="duration">Duration:</label>
+                <br>
+            <select id="duration" name="duration">
+                <option value="2 hours">2 hours</option>
+                <option value="4 hours">4 hours</option>
+                <option value="6 hours">6 hours</option>
+            </select>
+                <br>
+                <br>
+            <label for="package"> Package: </label>
+                <br>
+            <input list="package" type="text" name="package">
+            <datalist id="package">
+                <select>
+                <option value="Romantic tour of ancient Rome">Romantic tour of ancient Rome</option>
+                <option value="Explore the colosseum">Explore the Colosseum</option>
+                <option value="New impulses in Times Square">New impulses in Times Square</option>
+                <option value="The New York Friends tour">The New York Friends tour</option>
+                <option value="Enjoy the sunset at Oia Santorini">Enjoy the sunset at Oia Santorini</option>
+                <option value="Hike to the top of the Santorini volcano">Hike to the top of the Santorini volcano</option>
+                </select>
+            </datalist>
+            </div>
+            <br>
+            <br>
+            <input type="submit" id="Book" name="Book" value="BOOK NOW">
+        </form>
+        </div>
+        
+        <!-- Package suggestions -->
+            <div id="packageIndex"> 
+                <!-- Roma -->
+                <div class="insidePackageIndex">
+                    <img src="AdobeStock_Roma.jpeg" alt="A picture of the colosseum in Rome" width="100%" height="auto"> 
+                    <a href="packages.html">Package 1: <br> Explore the <br> Colosseum</a>
+                    <p> Duration: 4 hours <br><br>
+                        Learn about ancient Rome with a guided walk through the Colosseum.</p>
+                    <a href="booking.html">BOOK NOW</a>
+                </div>
+                <!-- New York -->
+                <div class="insidePackageIndex">
+                    <img src="AdobeStock_NewYork.jpeg" alt="A picture of a busy day in New York" width="100%" height="auto"> 
+                    <a href="packages.html"> Package 2: <br>New impulses in <br> Times Square</a>
+                    <p> Duration: 2 hours <br><br>
+                        Be a proper tourist in New York and 
+                        experience one of the busiest areas in the city. </p>
+                    <a href="booking.html">BOOK NOW</a>
+                </div>
+                <!-- Santorini -->
+                <div class="insidePackageIndex">
+                    <img src="AdobeStock_Oia.jpeg" alt="A picture of the sunset at Oia in Santorini" width="100%" height="auto"> 
+                    <a href="packages.html">Package 3: <br> Enjoy the sunset at <br> Oia Santorini</a>
+                    <p> Duration: 2 hours <br><br>
+                        Want romance? The sunset in Oia is one of the most romantic exepiences you can have. </p>
+                    <a href="booking.html">BOOK NOW</a>
+                </div>
+            </div>
+        </div>
+        </main>
+        
+        <footer>
+            <span>&copy; Screen Travelers</span>
+        </footer>
     
 </body>
 </html>

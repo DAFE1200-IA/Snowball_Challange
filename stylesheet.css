@@ -17,3 +17,106 @@ body {
 
 
 /* Navigation-bar and Logo */ 
+
+
+/* Booking*/
+.bookingForm{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2em;
+    padding: 1em;
+    background-color: rgba(87, 43, 43, 0.055);
+    border-radius: 0.4em;
+}
+
+.bookingForm input[type=text]{
+    width: 100%;
+}
+
+.bookingForm #duration{
+    width: 100%;
+}
+
+.bookingForm input[type=submit]{
+    color: black;
+    padding: 0.5em;
+    background-color: lightblue;
+}
+
+.toAndFrom {
+   
+}
+
+
+.timePackage{
+
+}
+
+
+/*Package options*/
+#packageIndex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;  
+    align-content: center;
+    width: 100%;
+}
+
+#packageIndex .insidePackageIndex {
+    background-color: rgba(87, 43, 43, 0.055);
+    border-radius: 0.4em;
+    position: relative;
+    margin: 3em;
+    width: 22em;
+    height: 33em;
+    letter-spacing: 1px;
+    overflow: hidden;  
+
+}
+
+#packageIndex .insidePackageIndex  img {
+    display: inline-block;
+    position: relative;
+    bottom: 1em;
+    right: 2em;
+    height: 14em;
+    overflow: hidden; 
+    padding: 1em 2em;
+}
+
+#packageIndex .insidePackageIndex  a {
+    display: inline-block;
+    color: black;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+#packageIndex .insidePackageIndex  p {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    bottom: 3;
+    padding: 1em 2em 2em;
+    font-weight: 500;
+    font-size: 0.9em;
+    color: black;   
+}
+
+#packageIndex a:hover {
+    color: white;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    text-align: center;
+}
