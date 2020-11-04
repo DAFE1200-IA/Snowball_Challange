@@ -155,7 +155,7 @@ nav a:hover {
 
     .logo {
         font-size: 1.7em;
-        grid-column: 2 / 3; 
+        
     }
 
     nav {
@@ -169,7 +169,6 @@ nav a:hover {
         left: initial;
         /* end Edge support lines */
         
-        grid-column: 3 / 4;
         display: flex; 
         justify-content: flex-end;
         align-items: center;
