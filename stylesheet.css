@@ -27,15 +27,17 @@ header {
 }
 
 .logo {
-    color: rgb(241, 241, 232);
-    font-weight: 100;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
     text-align: right;
+    margin-right: 0.5em;   
+}
+
+.logo a {
+    text-decoration: none;
+    color: rgb(241, 241, 232);
     font-size: 1.1em;
-    margin-right: 0.5em;
-    
-    
+    letter-spacing: 0.2em;
+    font-weight: 100;
+    text-transform: uppercase;
 }
 
 /* Hamburger-menu starts */
@@ -111,7 +113,7 @@ nav li {
 nav a {
     color: rgb(241, 241, 232); 
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 0.7em;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-weight: 100;
@@ -130,4 +132,69 @@ nav a:hover {
 .nav-toggle:checked ~ nav a {
     opacity: 1;
     transition: opacity 250ms ease-in-out 250ms;
+}
+
+
+
+
+
+
+
+/* Responsive rules */ 
+
+@media screen and (min-width: 800px) {
+ 
+    .nav-toggle-label{
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    }
+
+    .logo {
+        font-size: 1.7em;
+        grid-column: 2 / 3; 
+    }
+
+    nav {
+        all: unset;
+        grid-column: 3 / 4;
+        display: flex; 
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex; 
+    }
+
+    nav li {
+        margin-left: 3em;
+        margin-bottom: 0em;
+    }
+
+    nav a {
+        opacity: 1;
+        position: relative;
+        font-size: 0.54em;
+    }
+
+    nav a::before {
+        content: '';
+        display: block;
+        height: 1px;
+        background: black;
+        position: absolute;
+        bottom: -0.75em;
+        left: 0;
+        right: 0;
+        transform: scale(0, 1);
+        transition: transform ease-in-out 250ms;
+    }
+
+    nav a:hover::before {
+        transform: scale(1,1);
+    }
 }
