@@ -17,7 +17,6 @@ body {
 
 
 /* Navigation-bar and Logo */ 
-
 header {
     background-color: var(--green);
     text-align: center;
@@ -42,9 +41,17 @@ header {
 
 /* Hamburger-menu starts */
 
+/* Making it tabbable start */
 .nav-toggle {
-    display: none;
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;    
 }
+
+.nav-toggle:focus ~ .nav-toggle-label {
+    outline: 3px solid rgb(red, 0.75em);
+}
+/* Making it tabbable end */
 
 .nav-toggle-label {
     position: absolute;
@@ -80,12 +87,6 @@ header {
 .nav-toggle-label span::after {
     top: 0.6em;
 }
-
-
-
-
-
-
 
 nav {
     background-color: var(--green);
@@ -159,7 +160,16 @@ nav a:hover {
     }
 
     nav {
-        all: unset;
+        /* Removed the animation, did not use all: unset; while this does not support Edge */
+        position: relative;
+        text-align: left;
+        transition: none;
+        transform: scale(1,1);
+        background: none;
+        top: initial;
+        left: initial;
+        /* end Edge support lines */
+        
         grid-column: 3 / 4;
         display: flex; 
         justify-content: flex-end;
