@@ -51,7 +51,6 @@ header {
 .nav-toggle:focus ~ .nav-toggle-label {
     outline: 3px solid rgb(red, 0.75em);
 }
-/* Making it tabbable end */
 
 .nav-toggle-label {
     position: absolute;
