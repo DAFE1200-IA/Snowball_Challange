@@ -255,7 +255,6 @@ nav a:hover {
 }
 
 .banner h1 {
-
     position: relative;
     top: 4em;
     text-align: center;
@@ -270,19 +269,18 @@ nav a:hover {
     top: 5.2em;
     text-align: center;
     font-weight: 100;
-    margin: 0em 2em;
+    font-size: 0.9em;
+    letter-spacing: 0.05em;
+    margin: 1.5em 2em;
     padding: 1em;
     border-radius: 3px;
-    background-color: rgb(240, 235, 230);
-    
+    background-color: rgb(240, 235, 230); 
 }
 
-
-
-footer{
+footer {
     position: relative;
-    bottom: 0;
-    text-align: center;
+    bottom: 0em;
+    text-align: center; 
 }
 
 /* Responsive rules */ 
