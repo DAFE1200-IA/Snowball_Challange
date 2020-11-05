@@ -25,7 +25,13 @@ body {
     padding-top: 1em;
 }
 
+<<<<<<< Updated upstream
 #bookingForm{
+=======
+/* Booking*/
+.bookingForm{
+    font-family: 'railway', sans-serif;
+>>>>>>> Stashed changes
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,6 +70,7 @@ body {
     color: white;
 }
 
+<<<<<<< Updated upstream
 /*PACKAGE OPTIONS INDEX*/
 #packageIndex{
     display: flex;
@@ -73,6 +80,12 @@ body {
     text-align: center;
     margin: 3em 0 3em;
 }
+=======
+.bookingForm a{
+    text-decoration: none;
+    color: black;
+} 
+>>>>>>> Stashed changes
 
 #packageIndex .insidePackageIndex{
     width: 100%;
@@ -126,10 +139,19 @@ body {
 #packages{
     display: flex;
     flex-direction: column;
+<<<<<<< Updated upstream
     justify-content: center;
     align-items: center;
     text-align: center;
     margin: 3em 0 3em;
+=======
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;  
+    align-content: center;
+    width: 100%;
+    font-family: 'railway', sans-serif;
+>>>>>>> Stashed changes
 }
 
 #packages .insidePackages{
@@ -194,6 +216,7 @@ body {
         margin: 0 0.8em 1em;
     }
 }
+
 
 footer{
     position: relative;

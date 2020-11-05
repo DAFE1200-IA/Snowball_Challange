@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet3.css">
+    <title>Screen Travel</title>
+</head>
+<body>
+
+<<<<<<< Updated upstream
+    <!-- Navigation and logo -->
+    <header>
+        <h1 class="logo"><a href="index.html">Screen Travel</a></h1>
+        <img src="vr-glasses-1395.png" alt="VR-glasses icon" width="100%" height="auto">
+        <!-- Source to vr-glasses: https://www.iconpacks.net/free-icon/vr-glasses-1395.html -->
+        <input type="checkbox" id="nav-hamburger" class="nav-hamburger">
+        <nav>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="#">Travel info</a></li>
+                <li><a href="#">Buy VR glasses</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <label for="nav-hamburger" class="nav-hamburger-label">
+            <span></span>
+        </label>
+    </header>
+=======
+<!-- NAVIGATION BAR AND LOGO -->
+<header>
+    <h1 class="logo">Screen Travel</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- CONTENT -->
+<main>
+>>>>>>> Stashed changes
+
+<!-- Background image -->
+<img src="AdobeStock_OiaVillage.jpeg" alt="Picture of houses in Santorini, Greece" width="100%" height="auto">
+
+<!-- Dropdown menu for booking screen traveling -->
+<div id="bookingForm">
+    <form action="booking.html">
+
+    <!-- Travel from and to -->
+    <label for="travelFrom">Travel from:</label>
+        <br>
+    <input type="text" id="travelFrom" name="travelFrom_field"> 
+        <br>
+        <br>
+
+    <!-- Packages -->
+    <label for="package">Package:</label>
+        <br>
+    <input list="package" type="text" name="package">
+    <datalist id="package">
+        <select>
+            <option value="Romantic tour of ancient Rome">Romantic tour of ancient Rome</option>
+            <option value="Explore the Colosseum">Explore the Colosseum</option>
+            <option value="New impulses in Times Square">New impulses in Times Square</option>
+            <option value="The New York Friends tour">The New York Friends tour</option>
+            <option value="Enjoy the sunset at Oia Santorini">Enjoy the sunset at Oia Santorini</option>
+            <option value="Hike to the top of the Santorini volcano">Hike to the top of the Santorini volcano</option>
+        </select>
+    </datalist>     
+        <br>
+        <br>
+
+    <!-- Duration-->
+    <div>
+        <label for="duration">Duration:</label>
+            <br>
+        <input type="radio" id="2hours" name="duration" value="2">
+        <label for="2hours">2 hours</label>
+            <br>
+        <input type="radio" id="4hours" name="duration" value="4">
+        <label for="4hours">4 hours</label>
+            <br>
+        <input type="radio" id="6hours" name="duration" value="6">
+        <label for="6hours">6 hours</label>
+    </div>
+            <br>
+
+    <!-- Submit -->
+        <input class="submit" type="submit" value="Book now">
+    </form>
+</div> 
+
+<!-- Package suggestions -->
+<div id="packageIndex"> 
+
+    <!-- Roma -->
+    <div class="insidePackageIndex">
+        <img src="AdobeStock_Roma.jpeg" alt="A picture of the colosseum in Rome" width="100%"> 
+        <h2>Explore the Colosseum</h2>
+        <p> Duration: 4 hours <br><br>
+            Learn about ancient Rome with a guided walk through the Colosseum.
+            <br>
+            <br> 
+            <a href="booking.html">Book now</a> or <a href="packages.html">read about our packages.</a>
+        </p>
+    </div>
+
+    <!-- New York -->
+    <div class="insidePackageIndex">
+        <img src="AdobeStock_NewYork.jpeg" alt="A picture of a busy day in New York" width="100%"> 
+        <h2>New impulses in Times Square</h2>
+        <p> Duration: 2 hours <br><br>
+            Be a proper tourist in New York and 
+            experience one of the busiest areas in the city. 
+            <br>
+            <br>
+            <a href="booking.html">Book now</a> or <a href="packages.html">read about our packages.</a>
+        </p>
+    </div>
+
+    <!-- Santorini -->
+    <div class="insidePackageIndex">
+        <img src="AdobeStock_Oia.jpeg" alt="A picture of the sunset at Oia in Santorini" width="100%"> 
+        <h2>Enjoy the sunset in Oia Santorini</h2>
+        <p> Duration: 2 hours <br><br>
+            Want romance? The sunset in Oia is one of the most romantic exepiences you can have. 
+            <br>
+            <br>
+            <a href="booking.html">Book now</a> or <a href="packages.html">read about our packages.</a>
+        </p>
+    </div>
+
+</div>
+</main>
+        
+<footer>
+    <span> &copy; Screen Travelers</span>
+</footer>
+    
+</body>
+</html>
