@@ -19,6 +19,7 @@ body {
 
 
 /* Navigation-bar and Logo */
+
 /* Mobile first */
 header {
     background-color: white;
@@ -150,13 +151,9 @@ nav a:hover {
     transition: opacity 250ms ease-in-out 250ms;
 }
 
-
-
-
-
-
-
 /* Responsive rules */ 
+
+/* Ipad and small desktop */
 @media screen and (min-width: 700px) {
     .logo {
         bottom: 0;
@@ -196,16 +193,10 @@ nav a:hover {
     nav a {
         margin-left: 1.3em;
         font-size: 0.8em;
-        }
-        
-    
-
-    
-   
-
+        } 
     }
 
-
+/* Desktop */
 @media screen and (min-width: 1300px) {
     
     .logo {
@@ -233,8 +224,8 @@ nav a:hover {
 
     nav a {
         position: relative;
-        left: 5em;
-        bottom: 2.9em;
+        left: 6em;
+        bottom: 3.2em;
         font-size: 0.9em;
         }
 }
