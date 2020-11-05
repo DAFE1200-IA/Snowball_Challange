@@ -42,11 +42,9 @@ body {
     width: 100%;
 }
 
-.bookingForm input[type=submit]{
-    color: black;
-    padding: 0.5em;
-    background-color: lightblue;
-}
+.bookingForm a{
+    text-decoration: none;
+} 
 
 .toAndFrom {
    
@@ -78,7 +76,6 @@ body {
     width: 22em;
     height: 33em;
     letter-spacing: 1px;
-    overflow: hidden;  
 
 }
 
@@ -88,6 +85,8 @@ body {
     bottom: 1em;
     right: 2em;
     width: 22em; 
+    height: 15em;
+    overflow: hidden;
     padding: 1em 2em;
 }
 
