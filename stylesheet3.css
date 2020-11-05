@@ -1,0 +1,202 @@
+
+/* *, *::before, *::after {
+    box-sizing: border-box;
+} */
+
+:root {
+    --blue: rgb(50, 86, 93);
+    --green: rgb(15, 80, 63);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* background: #222; */
+    font-family: 'railway', sans-serif;
+    /*font-weight: 400; */
+    box-sizing: border-box;
+}
+
+/* Navigation-bar and Logo */ 
+
+/* BOOKING FORM */
+#bookingForm h2{
+    font-size: 1.1em;
+    padding-top: 1em;
+}
+
+#bookingForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+    margin-bottom: 0;
+}
+
+#bookingForm label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+#bookingForm input[type=text]{
+    padding: 0.4em;
+    border: 1px solid #ccc;
+    border-radius: 0.4em;
+    width: 15em;
+}
+
+#bookingForm input[type=submit]{
+    color: black;
+    padding: 0.7em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: whitesmoke;
+    text-transform: uppercase;
+}
+
+#bookingForm input[type=submit]:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+/*PACKAGE OPTIONS INDEX*/
+#packageIndex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 3em 0 3em;
+}
+
+#packageIndex .insidePackageIndex{
+    width: 100%;
+    height: 30em;
+    background-color: whitesmoke;
+    margin: 0 0.8em 1em;
+}
+
+#packageIndex p{
+    background-color: whitesmoke;
+    padding: 1em;
+}
+
+#packageIndex a{
+    text-decoration: none;
+    color: rgb(80, 157, 170);
+    font-weight: 550;
+}
+
+#packageIndex a:hover{
+    text-decoration: none;
+    color: var(--blue);
+}
+
+/*Make it responsive*/
+@media only screen and (min-width: 400px){
+    #packageIndex .insidePackageIndex{
+        width: 90%;
+        height: 32em;
+        background-color: whitesmoke;
+        margin: 0 0.8em 1em;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #packageIndex{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;   
+    }
+
+    #packageIndex .insidePackageIndex{
+        width: 30%;
+        height: 32em;
+        background-color: whitesmoke;
+        margin: 0 0.8em 1em;
+    }
+}
+
+/*PACKAGES*/
+#packages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 3em 0 3em;
+}
+
+#packages .insidePackages{
+    width: 100%;
+    height: 30em;
+    background-color: whitesmoke;
+    margin: 0 0.8em 1em;
+}
+
+#packages p{
+    background-color: whitesmoke;
+    padding: 1em;
+}
+
+#packages a{
+    text-decoration: none;
+    color: rgb(80, 157, 170);
+    font-weight: 550;
+}
+
+#packages a:hover{
+    text-decoration: none;
+    color: var(--blue);
+}
+
+/*Make it responsive*/
+@media only screen and (min-width: 400px){
+    #packages .insidePackages{
+        width: 90%;
+        height: 32em;
+        background-color: whitesmoke;
+        margin: 0 0.8em 1em;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    #packages{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;   
+    }
+
+    #packages .insidePackages{
+        width: 45%;
+        height: 34em;
+        background-color: whitesmoke;
+        margin: 0 0.8em 1em;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #packages{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;   
+    }
+
+    #packages .insidePackages{
+        width: 45%;
+        height: 45em;
+        background-color: whitesmoke;
+        margin: 0 0.8em 1em;
+    }
+}
+
+footer{
+    position: relative;
+    text-align: center;
+    bottom: 0;
+}
