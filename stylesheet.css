@@ -133,12 +133,12 @@ nav a {
     font-weight: 100;
     opacity: 0;
     transition: opacity 150ms ease-in-out;
-    padding: 0.2em;
+    padding: 0.6em;
 }
 
 nav a:hover {
-    
-    background-color: rgba(50, 86, 93, 0.171) ;
+    border-radius: 4px;
+    background-color: rgba(50, 86, 93, 0.096) ;
     color: var(--blue);
 }
 
