@@ -151,101 +151,6 @@ nav a:hover {
     transition: opacity 250ms ease-in-out 250ms;
 }
 
-/* Responsive rules */ 
-/* Ipad and small desktop */
-@media screen and (min-width: 700px) {
-    .logo {
-        bottom: 0;
-        text-align: right;
-        margin-right: 1em; 
-    }
-    
-    .logo a {
-        font-size: 0.78em;  
-    }
-
-    header img {
-        position: absolute;
-        right: 19.5em;
-        bottom: 0.6em;
-        height: 4em;
-        width: 4em;
-        opacity: 1;
-    }
-
-    .nav-hamburger-label {
-        margin-left: 2.1em;
-    }
-
-    .nav-hamburger-label span,
-    .nav-hamburger-label span::before, 
-    .nav-hamburger-label span::after {
-        height: 1.6px;
-        width: 2.5em;
-    }
-
-    .nav-hamburger-label span::before,
-    .nav-hamburger-label span::after {
-        content: '';
-        position: absolute;
-    }
-
-    .nav-hamburger-label span::before { 
-        bottom: 0.8em;
-    }
-
-    .nav-hamburger-label span::after {
-        top: 0.8em;
-    }
-
-    nav a {
-        margin-left: 1.3em;
-        font-size: 0.8em;
-        } 
-    }
-
-/* Desktop */
-@media screen and (min-width: 1300px) {
-    
-    .logo {
-        top: 0em;
-        margin-right: 0.9em; 
-    }
-    
-    .logo a {
-        text-decoration: none;
-        font-size: 0.9em;
-        letter-spacing: 0.2em;
-        font-weight: 100;
-        text-transform: uppercase;
-    }
-
-    header img {
-        position: absolute;
-        right: 22em;
-        bottom: 0.6em;
-        height: 4em;
-        width: 4em;
-    }
-
-    nav {
-        position: absolute;
-        text-align: left;
-        left: 0;
-        }
-
-    nav li {
-        display: inline-block;
-    }
-
-    nav a {
-        position: relative;
-        left: 6em;
-        bottom: 3.2em;
-        font-size: 0.9em;
-        }
-}
-
 /* Booking*/
 .bookingForm{
     font-family: 'railway' sans-serif;
@@ -342,13 +247,114 @@ nav a:hover {
 }
 
 /* About us */
-.banner {
-    
-
+.banner img{
+    position: relative;
+    top: 4.3em;
+    background-size: cover;
+    background-position: center;
 }
+
+
+
+
 
 footer{
     position: relative;
     bottom: 0;
     text-align: center;
+}
+
+/* Responsive rules */ 
+/* Ipad and small desktop */
+@media screen and (min-width: 700px) {
+    .logo {
+        bottom: 0;
+        text-align: right;
+        margin-right: 1em; 
+    }
+    
+    .logo a {
+        font-size: 0.78em;  
+    }
+
+    header img {
+        position: absolute;
+        right: 19.5em;
+        bottom: 0.6em;
+        height: 4em;
+        width: 4em;
+        opacity: 1;
+    }
+
+    .nav-hamburger-label {
+        margin-left: 2.1em;
+    }
+
+    .nav-hamburger-label span,
+    .nav-hamburger-label span::before, 
+    .nav-hamburger-label span::after {
+        height: 1.6px;
+        width: 2.5em;
+    }
+
+    .nav-hamburger-label span::before,
+    .nav-hamburger-label span::after {
+        content: '';
+        position: absolute;
+    }
+
+    .nav-hamburger-label span::before { 
+        bottom: 0.8em;
+    }
+
+    .nav-hamburger-label span::after {
+        top: 0.8em;
+    }
+
+    nav a {
+        margin-left: 1.3em;
+        font-size: 0.8em;
+        } 
+    }
+
+/* Desktop */
+@media screen and (min-width: 1300px) {
+    
+    .logo {
+        top: 0em;
+        margin-right: 0.9em; 
+    }
+    
+    .logo a {
+        text-decoration: none;
+        font-size: 0.9em;
+        letter-spacing: 0.2em;
+        font-weight: 100;
+        text-transform: uppercase;
+    }
+
+    header img {
+        position: absolute;
+        right: 22em;
+        bottom: 0.6em;
+        height: 4em;
+        width: 4em;
+    }
+
+    nav {
+        position: absolute;
+        text-align: left;
+        left: 0;
+        }
+
+    nav li {
+        display: inline-block;
+    }
+
+    nav a {
+        position: relative;
+        left: 6em;
+        bottom: 3.2em;
+        font-size: 0.9em;
+        }
 }
