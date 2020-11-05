@@ -12,7 +12,7 @@ body {
     margin: 0;
     padding: 0;
     /* background: #222; */
-    font-family: 'railway' sans-serif;
+    font-family: 'railway', sans-serif;
     /*font-weight: 400; */
     box-sizing: border-box;
 }
@@ -21,7 +21,6 @@ body {
 /* Navigation-bar and Logo */
 /* Mobile first */
 header {
-    border-bottom: 1px solid rgb(50, 86, 93);
     background-color: white;
     text-align: center;
     position: fixed;
@@ -111,7 +110,6 @@ nav {
     transform: scale(1, 0);
     transform-origin: top;
     transition: transform 400ms ease-in-out;  
-    border-bottom: 1px solid black; 
 }
 
 nav ul {
