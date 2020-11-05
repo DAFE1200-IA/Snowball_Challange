@@ -19,7 +19,6 @@ body {
 
 
 /* Navigation-bar and Logo */
-
 /* Mobile first */
 header {
     background-color: white;
@@ -47,10 +46,11 @@ header {
 
 header img {
     position: absolute;
-    right: 22em;
-    bottom: 0.6em;
+    right: 4.5em;
+    bottom: 0.7em;
     height: 4em;
     width: 4em;
+    opacity: 0.2;
 }
 
 /* Hamburger-menu */
@@ -152,7 +152,6 @@ nav a:hover {
 }
 
 /* Responsive rules */ 
-
 /* Ipad and small desktop */
 @media screen and (min-width: 700px) {
     .logo {
@@ -163,6 +162,15 @@ nav a:hover {
     
     .logo a {
         font-size: 0.78em;  
+    }
+
+    header img {
+        position: absolute;
+        right: 19.5em;
+        bottom: 0.6em;
+        height: 4em;
+        width: 4em;
+        opacity: 1;
     }
 
     .nav-hamburger-label {
@@ -210,6 +218,14 @@ nav a:hover {
         letter-spacing: 0.2em;
         font-weight: 100;
         text-transform: uppercase;
+    }
+
+    header img {
+        position: absolute;
+        right: 22em;
+        bottom: 0.6em;
+        height: 4em;
+        width: 4em;
     }
 
     nav {
@@ -323,6 +339,12 @@ nav a:hover {
 
 #packageIndex a:hover {
     color: white;
+}
+
+/* About us */
+
+.banner {
+    
 }
 
 footer{
