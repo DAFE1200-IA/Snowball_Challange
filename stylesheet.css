@@ -255,8 +255,9 @@ nav a:hover {
 }
 
 .banner h1 {
+
     position: relative;
-    top: 3.5em;
+    top: 4em;
     text-align: center;
     font-weight: 100;
     text-transform: uppercase;
@@ -266,7 +267,7 @@ nav a:hover {
 
 .banner p {
     position: relative;
-    top: 5em;
+    top: 5.2em;
     text-align: center;
     font-weight: 100;
     margin: 0em 2em;
