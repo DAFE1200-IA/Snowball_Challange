@@ -50,7 +50,7 @@ header img {
     bottom: 0.7em;
     height: 4em;
     width: 4em;
-    opacity: 0.2;
+    opacity: 0.11;
 }
 
 /* Hamburger-menu */
@@ -247,14 +247,34 @@ nav a:hover {
 }
 
 /* About us */
-.banner img{
+.banner img {
     position: relative;
     top: 4.3em;
     background-size: cover;
     background-position: center;
 }
 
+.banner h1 {
+    position: relative;
+    top: 3.5em;
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 0.15em;
+}
 
+.banner p {
+    position: relative;
+    top: 5em;
+    text-align: center;
+    font-weight: 100;
+    margin: 0em 2em;
+    padding: 1em;
+    border-radius: 3px;
+    background-color: rgb(240, 235, 230);
+    
+}
 
 
 
