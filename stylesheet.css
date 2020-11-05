@@ -272,6 +272,7 @@ nav a:hover {
     font-size: 0.9em;
     letter-spacing: 0.05em;
     margin: 1.5em 2em;
+    margin-bottom: 10em;
     padding: 1em;
     border-radius: 3px;
     background-color: rgb(240, 235, 230); 
@@ -284,8 +285,9 @@ footer {
 }
 
 /* Responsive rules */ 
-/* Ipad and small desktop */
 @media screen and (min-width: 700px) {
+
+    /* Navigation and logo ipad */
     .logo {
         bottom: 0;
         text-align: right;
@@ -333,12 +335,29 @@ footer {
     nav a {
         margin-left: 1.3em;
         font-size: 0.8em;
-        } 
+        }
+
+    /* About us ipad  */
+    .banner h1 {
+        position: relative;
+        top: 3.5em;
+        font-size: 1.4em;
+        }
+        
+    .banner p {
+        position: relative;
+        top: 5.3em;
+        font-size: 1em;
+        margin: 1.5em 7em;
+        margin-bottom: 12em;
+        padding: 2.5em; 
+        }
     }
 
-/* Desktop */
+
 @media screen and (min-width: 1300px) {
     
+    /* Navigation and logo esktop */
     .logo {
         top: 0em;
         margin-right: 0.9em; 
@@ -376,4 +395,21 @@ footer {
         bottom: 3.2em;
         font-size: 0.9em;
         }
-}
+
+    /* About us desktop */
+    .banner h1 {
+        position: relative;
+        top: 3.2em;
+        font-size: 2em;
+        }
+        
+    .banner p {
+        position: relative;
+        top: 6em;
+        font-size: 1.4em;
+        margin: 1em 15em;
+        margin-bottom: 14em;
+        padding: 4em; 
+        }
+    }
+
