@@ -275,11 +275,11 @@ form{
 }
 
 .insidePackageIndex h2{
-        text-align: center;
-        font-weight: 100;
-        text-transform: uppercase;
-        font-size: 1.2em;
-        letter-spacing: 0.08em;
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 0.08em;
 }
 
 #packageIndex p{
@@ -309,6 +309,21 @@ form{
 }
 
 @media only screen and (min-width: 768px) {
+    #packageIndex{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;   
+    }
+
+    #packageIndex .insidePackageIndex{
+        width: 30%;
+        height: 28em;
+        background-color: whitesmoke;
+        margin: 0 0.8em 1em;
+    }
+}
+
+@media only screen and (min-width: 900px) {
     #packageIndex{
         display: flex;
         flex-direction: row;
@@ -470,6 +485,36 @@ form{
     #packages .insidePackages p {
         padding-bottom: 2em;
     }
+}
+
+/* Booking */
+.bookingInfo h1 {
+    position: relative;
+    top: 4em;
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 0.15em;
+}
+
+.bookingInfo p {
+    position: relative;
+    top: 3em;
+    text-align: center;
+    font-weight: 100;
+    font-size: 0.9em;
+    letter-spacing: 0.05em;
+    margin: 5em;
+    margin-bottom: 9em;
+    padding: 0.5em 1em;
+    border-radius: 3px;
+    background-color: whitesmoke; 
+}
+
+.bookingInfo a {
+    text-decoration: none;
+    color: black;
 }
 
 
