@@ -15,7 +15,7 @@ header {
     background-color: white;
     text-align: center;
     position: fixed;
-    z-index: 999; 
+    z-index: 999;
     width: 100%;
 }
 
@@ -23,13 +23,13 @@ header {
     position: relative;
     bottom: 0.2em;
     text-align: right;
-    margin-right: 0.6em; 
+    margin-right: 0.6em;
 }
 
 .logo a {
     text-decoration: none;
     color: var(--blue);
-    font-size: 0.49em;
+    font-size: 0.45em;
     letter-spacing: 0.2em;
     font-weight: 100;
     text-transform: uppercase;
@@ -45,12 +45,11 @@ header img {
 }
 
 /* Hamburger-menu */
-
 /* Making it tabbable start */
 .nav-hamburger {
     position: absolute !important;
     top: -9999px !important;
-    left: -9999px !important;    
+    left: -9999px !important;
 }
 
 .nav-hamburger:focus ~ .nav-hamburger-label {
@@ -67,8 +66,12 @@ header img {
     align-items: center;
 }
 
+.nav-hamburger-label:hover{
+    cursor: pointer;
+}
+
 .nav-hamburger-label span,
-.nav-hamburger-label span::before, 
+.nav-hamburger-label span::before,
 .nav-hamburger-label span::after {
     display: block;
     background: var(--blue);
@@ -84,7 +87,7 @@ header img {
     position: absolute;
 }
 
-.nav-hamburger-label span::before { 
+.nav-hamburger-label span::before {
     bottom: 0.6em;
 }
 
@@ -101,7 +104,7 @@ nav {
     width: 100%;
     transform: scale(1, 0);
     transform-origin: top;
-    transition: transform 400ms ease-in-out;  
+    transition: transform 400ms ease-in-out;
 }
 
 nav ul {
@@ -116,7 +119,7 @@ nav li {
 }
 
 nav a {
-    color: var(--blue); 
+    color: var(--blue);
     text-decoration: none;
     font-size: 0.7em;
     text-transform: uppercase;
@@ -278,7 +281,7 @@ form{
     margin-bottom: 10em;
     padding: 0.5em 1em;
     border-radius: 3px;
-    background-color: whitesmoke; 
+    background-color: whitesmoke;
 }
 
 .banner a {
@@ -316,7 +319,7 @@ form{
 
 #packages .insidePackages{
     width: 100%;
-    height: 25em;
+    height: 26em;
     padding-bottom: 2em;
     background-color: whitesmoke;
     margin: 1em 0.8em 1em;
@@ -382,15 +385,38 @@ form{
 }
 
 
-footer{
-    position: relative;
-    text-align: center;
-    bottom: 0;
-}
+/*CONTENT CONTACT US PAGE*/
+    /* Mobile first */
+    .backgroundContact{
+        background-color: rgba(115, 176, 209, 1);
+    }
 
+    form {
+        background-color: white;
+        display: flexbox;
+        height: auto;
+        width: auto;
+        position: relative;
+        top: 5em;
+        margin: 1em;
+        padding: 1em;
+        border-radius: 5px;
+    }
+
+    form h1 {
+        font-weight: 100;
+        color: rgb(50, 84, 114);
+    }
+
+    form p {
+        text-align: left;
+    }
+
+    .formContent {
+        margin-bottom: 4em;
+    }
 
 /* Responsive rules */ 
-
 @media only screen and (min-width: 400px){
     /*Packages Index*/
     #packageIndex .insidePackageIndex{
@@ -426,17 +452,91 @@ footer{
     }
 }
 
+    .formContent p {
+        position: relative;
+        bottom: 1em;
+    }
+
+    .formContent select {
+        margin: 1.3em 0em;
+    }
+
+    .formContent input {
+        margin: 1em 0em;
+    }
+
+    .formContent textarea {
+        margin: 1em 0em;
+    }
+
+    .radio {
+        position: relative;
+        bottom: 1.5em;
+        display: inline-flex;
+    }
+
+    .radio label{
+        position: relative;
+        top: 0.5em;
+        margin-right: 0.6em;
+    }
+
+    .radio input {
+        margin-right: 2em;
+    }
+
+    .choices {
+        position: relative;
+        bottom: 1em;
+    }
+
+    .submit {
+        position: relative;
+        left: 10em;
+    }
+
+    /* Contact us submit page */
+   .submittedContent {
+        position: relative;
+        top: 7em;
+        margin: 1em;
+        border-radius: 5px;
+        padding: 0.9em;
+        text-align: center;
+        background-color: whitesmoke;
+    }
+
+    .submittedContent h1 {
+        font-size: 1.2em;
+        font-weight: 100;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        color: var(--blue);
+    }
+
+    .submittedContent p {
+        font-size: 1em;
+    }
+
+    footer{
+        position: relative;
+        text-align: center;
+        bottom: 0;
+    }
+
+
+/* Responsive rules */
 @media screen and (min-width: 700px) {
 
     /* Navigation and logo ipad */
     .logo {
         bottom: 0;
         text-align: right;
-        margin-right: 1em; 
+        margin-right: 1em;
     }
-    
+
     .logo a {
-        font-size: 0.78em;  
+        font-size: 0.78em;
     }
 
     header img {
@@ -453,7 +553,7 @@ footer{
     }
 
     .nav-hamburger-label span,
-    .nav-hamburger-label span::before, 
+    .nav-hamburger-label span::before,
     .nav-hamburger-label span::after {
         height: 1px;
         width: 2.5em;
@@ -465,7 +565,7 @@ footer{
         position: absolute;
     }
 
-    .nav-hamburger-label span::before { 
+    .nav-hamburger-label span::before {
         bottom: 0.8em;
     }
 
@@ -484,16 +584,29 @@ footer{
         top: 3.5em;
         font-size: 1.4em;
         }
-        
+
     .banner p {
         position: relative;
         top: 5.3em;
         font-size: 1em;
         margin: 1.5em 7em;
         margin-bottom: 12em;
-        padding: 2.5em; 
+        padding: 2.5em;
         }
+
+    /* Contact us submitted page ipad */
+    .submittedContent {
+        position: relative;
+        top: 9em;
+        margin: 3em;
+        padding: 3em;
+
     }
+
+    .submittedContent h1 {
+        font-size: 1.4em;
+    }
+}
 
     @media only screen and (min-width: 750px) {
         /*Packages*/
@@ -618,62 +731,90 @@ footer{
             margin-left: 10em;
             margin-right: 10em;
         }
-    } 
 
-@media screen and (min-width: 1300px) {
-    
-    /* Navigation and logo esktop */
-    .logo {
-        top: 0em;
-        margin-right: 0.9em; 
-    }
-    
-    .logo a {
-        text-decoration: none;
-        font-size: 0.9em;
-        letter-spacing: 0.2em;
-        font-weight: 100;
-        text-transform: uppercase;
-    }
-
-    header img {
-        position: absolute;
-        right: 22em;
-        bottom: 0.6em;
-        height: 4em;
-        width: 4em;
-    }
-
-    nav {
-        position: absolute;
-        text-align: left;
-        left: 0;
-        }
-
-    nav li {
-        display: inline-block;
-    }
-
-    nav a {
-        position: relative;
-        left: 6em;
-        bottom: 3.2em;
-        font-size: 0.9em;
-        }
-
-    /* About us desktop */
-    .banner h1 {
-        position: relative;
-        top: 3.2em;
-        font-size: 2em;
-        }
-        
-    .banner p {
-        position: relative;
-        top: 6em;
-        font-size: 1.4em;
-        margin: 1em 15em;
-        margin-bottom: 14em;
-        padding: 4em; 
+        /*Submit page*/
+        .submittedContent p {
+            font-size: 1em;
         }
     }
+
+
+@media screen and (min-width: 1300px){
+/* Navigation and logo esktop */
+.logo {
+    top: 0em;
+    margin-right: 0.9em;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 0.9em;
+    letter-spacing: 0.2em;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+header img {
+    position: absolute;
+    right: 22em;
+    bottom: 0.6em;
+    height: 4em;
+    width: 4em;
+}
+
+nav {
+    position: absolute;
+    text-align: left;
+    left: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    position: relative;
+    left: 6em;
+    bottom: 3.2em;
+    font-size: 0.9em;
+    }
+
+/* About us desktop */
+.banner h1 {
+    position: relative;
+    top: 3.2em;
+    font-size: 2em;
+    }
+
+.banner p {
+    position: relative;
+    top: 6em;
+    font-size: 1.4em;
+    margin: 1em 15em;
+    margin-bottom: 14em;
+    padding: 4em;
+    }
+
+/* Contact us submitted page desktop */
+.submittedContent {
+    position: relative;
+    top: 9em;
+    margin: 3em;
+    padding: 3em;
+}
+
+.submittedContent {
+    position: relative;
+    top: 11em;
+    margin: 2em 15em;
+    padding: 3em;
+}
+
+.submittedContent h1 {
+    font-size: 1.6em;
+}
+
+.submittedContent p {
+    font-size: 1.3em;
+}
+}

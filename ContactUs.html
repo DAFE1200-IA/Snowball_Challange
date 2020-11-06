@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <title>Contacts Us</title>
+</head>
+<body>
+     <!-- Navigation and logo -->
+     <header>
+        <h1 class="logo"><a href="index.html">Screen Travel</a></h1>
+        <img src="vr-glasses-1395.png" alt="VR-glasses icon" width="100%" height="auto">
+        <!-- Source to vr-glasses: https://www.iconpacks.net/free-icon/vr-glasses-1395.html -->
+        <input type="checkbox" id="nav-hamburger" class="nav-hamburger">
+        <nav>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <label for="nav-hamburger" class="nav-hamburger-label">
+            <span></span>
+        </label>
+    </header>
+
+    <!-- Contact form -->
+    <form action="submitPage.html">
+        <h1>Contact Us</h1>
+        <p>We would love to hear from you. Leave a message bellow 
+            and we will get in touch with you shortly.</p>
+
+        <!-- Name -->
+        <div class="formContent">
+            <div class="name">
+                <label for="firstName">First Name:</label><br>
+                <input type="text" name="firstName-field" id="firstName"><br>
+                <label for="lastName">Last Name:</label><br>
+                <input type="text" name="lastnName-field" id="lastName"><br>
+            </div>
+
+            <!-- Contact -->
+            <div class="contact">
+                <label for="email">E-mail:</label><br>
+                <input type="text" name="email-field" id="email"><br>
+                <label for="phone">Phone:</label><br>
+                <input type="text" name="phone" id="phone"><br>
+            </div>
+
+            <!-- Message -->
+            <div class="message">
+                <label for="message">Message:</label><br>
+                <textarea name="message-field" id="message" rows="10" cols="20"></textarea><br>
+            </div>
+
+            <!-- Submit -->
+            <input class="submit" type="submit" value="Submit">
+        </div>
+    
+</body>
+</html>
