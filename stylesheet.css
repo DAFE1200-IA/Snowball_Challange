@@ -610,6 +610,7 @@ form{
         font-weight: 100;
         letter-spacing: 0.09em;
         text-transform: uppercase;
+        color: var(--blue);
     }
 
     .submittedContent p {
@@ -694,7 +695,7 @@ form{
         padding: 2.5em;
         }
 
-    /* Contact us submitted page Ipad */
+    /* Contact us submitted page ipad */
     .submittedContent {
         position: relative;
         top: 9em;
@@ -770,7 +771,7 @@ form{
         padding: 4em;
         }
 
-    /* Contact us submitted page */
+    /* Contact us submitted page desktop */
    .submittedContent {
         position: relative;
         top: 9em;
