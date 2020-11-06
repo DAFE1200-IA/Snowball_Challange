@@ -393,7 +393,7 @@ form{
     width: auto;
     position: relative;
     top: 5em;
-    margin: 1em;
+    margin: 10em 1em;
     margin-top: 0;
     padding: 1em;
     border-radius: 5px;
@@ -414,8 +414,12 @@ form{
     }
 
     .formContent {
-        margin-bottom: 4em;
+        margin-bottom: 3em;
     }
+
+    
+
+
 
     /* CONTACT US COMITTED PAGE */
    .submittedContent {
