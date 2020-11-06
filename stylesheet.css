@@ -1,8 +1,3 @@
-
-/* *, *::before, *::after {
-    box-sizing: border-box;
-} */
-
 :root {
     --blue: rgb(50, 86, 93);
     --green: rgb(15, 80, 63);
@@ -11,14 +6,11 @@
 body {
     margin: 0;
     padding: 0;
-    /* background: #222; */
     font-family: 'Railway', sans-serif;
-    /*font-weight: 400; */
     box-sizing: border-box;
 }
 
-/* Navigation-bar and Logo */
-/* Mobile first */
+/* NAVIGATION BAR AND LOGO */
 header {
     background-color: white;
     text-align: center;
@@ -80,7 +72,7 @@ header img {
 .nav-hamburger-label span::after {
     display: block;
     background: var(--blue);
-    height: 1.2px;
+    height: 1px;
     width: 2em;
     border-radius: 2px;
     position: relative;
@@ -216,47 +208,6 @@ form{
     color: white;
 }
 
-@media only screen and (min-width: 480px) {
-    
-    form{
-        width: 60%;
-    }
-
-    #bookingForm input[type=text]{
-        width: 70%;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    
-    form{
-        width: 60%;
-    }
-
-    #bookingForm input[type=text]{
-        width: 60%;
-    }
-}
-
-@media only screen and (min-width: 900px) {
-    
-    #bookingForm input[type=text]{
-        width: 50%;
-    }
-
-    form{
-        width: 45%;
-    }
-
-    #bookingForm h2{
-        text-align: center;
-        font-weight: 100;
-        text-transform: uppercase;
-        font-size: 1.3em;
-        letter-spacing: 0.08em;
-    }
-}
-
 /*PACKAGE OPTIONS INDEX*/
 #packageIndex{
     display: flex;
@@ -298,47 +249,7 @@ form{
     color: var(--blue);
 }
 
-/*Make it responsive*/
-@media only screen and (min-width: 400px){
-    #packageIndex .insidePackageIndex{
-        width: 90%;
-        height: 32em;
-        background-color: whitesmoke;
-        margin: 0 0.8em 1em;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    #packageIndex{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;   
-    }
-
-    #packageIndex .insidePackageIndex{
-        width: 30%;
-        height: 28em;
-        background-color: whitesmoke;
-        margin: 0 0.8em 1em;
-    }
-}
-
-@media only screen and (min-width: 900px) {
-    #packageIndex{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;   
-    }
-
-    #packageIndex .insidePackageIndex{
-        width: 30%;
-        height: 32em;
-        background-color: whitesmoke;
-        margin: 0 0.8em 1em;
-    }
-}
-
-/* About us */
+/* ABOUT US*/
 .banner img {
     position: relative;
     top: 4.3em;
@@ -378,8 +289,20 @@ form{
 /*PACKAGES*/
 .allPackages{
     position: relative;
-    top: 3em;  
-    margin-bottom: 4em;
+    top: 5em;  
+    margin-bottom: 5em;
+}
+
+.allPackages h1{
+    position: relative;
+    text-align: center;
+    top: 0em;
+    margin-top: 0;
+    margin-bottom: 1.5em;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 0.15em;
 }
 
 #packages{
@@ -393,7 +316,7 @@ form{
 
 #packages .insidePackages{
     width: 100%;
-    height: 26em;
+    height: 25em;
     padding-bottom: 2em;
     background-color: whitesmoke;
     margin: 1em 0.8em 1em;
@@ -422,80 +345,19 @@ form{
     color: var(--blue);
 }
 
-/*Make it responsive*/
-@media only screen and (min-width: 400px){
-    .allPackages{
-        position: relative;
-        top: 3em;  
-        margin-bottom: 4em;
-    }
-
-    #packages .insidePackages{
-        width: 90%;
-        height: 33em;
-        background-color: whitesmoke;
-        margin: 0 0.8em 1em;
-    }
-}
-
-@media only screen and (min-width: 750px) {
-    .allPackages{
-        position: relative;
-        top: 4em;  
-        margin-bottom: 4em;
-    }
-
-    #packages{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        position: relative;  
-    }
-
-    #packages .insidePackages{
-        width: 45%;
-        height: 30em;
-        background-color: whitesmoke;
-        margin: 0 0.8em 1em;
-    }
-}
-
-@media only screen and (min-width: 1000px) {
-    .allPackages{
-        position: relative;
-        top: 6em;  
-        margin-bottom: 7em;
-    }
-
-    #packages{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        position: relative;
-        padding-bottom: 5em;
-    }
-
-    #packages .insidePackages{
-        width: 45%;
-        height: 35em;
-        background-color: whitesmoke;
-        margin: 0 0.8em 3em;
-    }
-
-    #packages .insidePackages p {
-        padding-bottom: 2em;
-    }
-}
-
-/* Booking */
+/* BOOKING PAGE*/
 .bookingInfo h1 {
     position: relative;
-    top: 4em;
     text-align: center;
+    top: 6em;
+    margin-top: 0;
+    margin-bottom: 2.5em;
     font-weight: 100;
     text-transform: uppercase;
-    font-size: 1.2em;
+    font-size: 0.9em;
     letter-spacing: 0.15em;
+    padding: 0.5em;
+    
 }
 
 .bookingInfo p {
@@ -505,16 +367,18 @@ form{
     font-weight: 100;
     font-size: 0.9em;
     letter-spacing: 0.05em;
-    margin: 5em;
-    margin-bottom: 9em;
-    padding: 0.5em 1em;
     border-radius: 3px;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    padding: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
     background-color: whitesmoke; 
 }
 
 .bookingInfo a {
     text-decoration: none;
-    color: black;
+    color: var(--blue);
 }
 
 
@@ -526,6 +390,42 @@ footer{
 
 
 /* Responsive rules */ 
+
+@media only screen and (min-width: 400px){
+    /*Packages Index*/
+    #packageIndex .insidePackageIndex{
+        width: 90%;
+        height: 32em;
+        background-color: whitesmoke;
+        margin: 0 0.8em 1em;
+    }
+    
+    /*Packages*/
+    .allPackages{
+        position: relative;
+        top: 3em;  
+        margin-bottom: 4em;
+    }
+
+    #packages .insidePackages{
+        width: 90%;
+        height: 29em;
+        background-color: whitesmoke;
+        margin: 0 0.8em 1em;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    /*Booking form*/
+    form{
+        width: 60%;
+    }
+
+    #bookingForm input[type=text]{
+        width: 70%;
+    }
+}
+
 @media screen and (min-width: 700px) {
 
     /* Navigation and logo ipad */
@@ -555,7 +455,7 @@ footer{
     .nav-hamburger-label span,
     .nav-hamburger-label span::before, 
     .nav-hamburger-label span::after {
-        height: 1.6px;
+        height: 1px;
         width: 2.5em;
     }
 
@@ -595,6 +495,130 @@ footer{
         }
     }
 
+    @media only screen and (min-width: 750px) {
+        /*Packages*/
+        .allPackages{
+            position: relative;
+            top: 4em;  
+            margin-bottom: 4em;
+        }
+    
+        #packages{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            position: relative;  
+        }
+    
+        #packages .insidePackages{
+            width: 45%;
+            height: 28em;
+            background-color: whitesmoke;
+            margin: 0 0.8em 1em;
+        }
+    
+        #packages .insidePackages p{
+            padding: 1em;
+        }
+    }
+    
+    @media only screen and (min-width: 768px) {
+        /*Booking form*/        
+        form{
+            width: 60%;
+        }
+
+        #bookingForm input[type=text]{
+             width: 60%;
+        }
+
+        /*Packages Index*/
+        #packageIndex{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;   
+        }
+    
+        #packageIndex .insidePackageIndex{
+            width: 30%;
+            height: 25em;
+            background-color: whitesmoke;
+            margin: 0 0.8em 1em;
+        }
+    }
+    
+    @media only screen and (min-width: 900px) {
+        /*Packages Index*/
+        #packageIndex{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;   
+        }
+    
+        #packageIndex .insidePackageIndex{
+            width: 30%;
+            height: 32em;
+            background-color: whitesmoke;
+            margin: 0 0.8em 1em;
+        }
+
+        /*Booking form*/
+         #bookingForm input[type=text]{
+            width: 50%;
+        }
+    
+        form{
+            width: 45%;
+        }
+    
+        #bookingForm h2{
+            text-align: center;
+            font-weight: 100;
+            text-transform: uppercase;
+            font-size: 1.3em;
+            letter-spacing: 0.08em;
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+        /*Packages*/
+        .allPackages{
+            position: relative;
+            top: 6em;  
+            margin-bottom: 7em;
+        }
+    
+        #packages{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            position: relative;
+            padding-bottom: 5em;
+        }
+    
+        #packages .insidePackages{
+            width: 45%;
+            height: 33em;
+            background-color: whitesmoke;
+            margin: 0 0.8em 3em;
+        }
+    
+        #packages .insidePackages p {
+            padding-bottom: 2em;
+        }
+
+        /*Booking page*/
+        .bookingInfo h1{
+            font-size: 1.5em;
+            top: 4.5em;
+            margin-bottom: 1em;
+        }
+
+        .bookingInfo p{
+            margin-left: 10em;
+            margin-right: 10em;
+        }
+    } 
 
 @media screen and (min-width: 1300px) {
     
