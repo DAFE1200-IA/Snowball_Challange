@@ -518,6 +518,93 @@ form{
 }
 
 
+/*CONTENT CONTACT US PAGE*/
+    /* Mobile first */
+    .backgroundContact{
+        background-color: rgba(115, 176, 209, 1);
+    }
+
+    form {
+        background-color: white;
+        display: flexbox;
+        height: auto;
+        width: auto;
+        position: relative;
+        top: 5em;
+        margin: 1em;
+        padding: 1em;
+        border-radius: 5px;
+    }
+
+    form h1 {
+        font-weight: 100;
+        color: rgb(50, 84, 114);
+    }
+
+    form p {
+        text-align: left;
+    }
+
+    .formContent {
+        margin-bottom: 4em;
+    }
+
+    .formContent p {
+        position: relative;
+        bottom: 1em;
+    }
+
+    .formContent select {
+        margin: 1.3em 0em;
+    }
+
+    .formContent input {
+        margin: 1em 0em;  
+    }
+
+    .formContent textarea {
+        margin: 1em 0em;
+    }
+
+    .radio {
+        position: relative;
+        bottom: 1.5em;
+        display: inline-flex;
+    }
+
+    .radio label{
+        position: relative;
+        top: 0.5em;
+        margin-right: 0.6em;
+    }
+
+    .radio input {
+        margin-right: 2em;
+    }
+
+    .choices {
+        position: relative;
+        bottom: 1em;
+    }
+
+    .message
+
+    .submit {
+        position: relative;
+        left: 10em;       
+    }
+
+    /* SUBMIT PAGE */
+   .submittedContent {
+        position: relative;
+        top: 5em;
+        margin: 1em;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 0.5em;
+        text-align: center;
+    }
+    
 footer{
     position: relative;
     text-align: center;

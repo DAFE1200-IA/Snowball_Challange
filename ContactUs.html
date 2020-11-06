@@ -24,6 +24,39 @@
             <span></span>
         </label>
     </header>
+
+    <!-- Contact form -->
+    <form action="submitPage.html">
+        <h1>Contact Us</h1>
+        <p>We would love to hear from you. Leave a message bellow 
+            and we will get in touch with you shortly.</p>
+
+        <!-- Name -->
+        <div class="formContent">
+            <div class="name">
+                <label for="firstName">First Name:</label><br>
+                <input type="text" name="firstName-field" id="firstName"><br>
+                <label for="lastName">Last Name:</label><br>
+                <input type="text" name="lastnName-field" id="lastName"><br>
+            </div>
+
+            <!-- Contact -->
+            <div class="contact">
+                <label for="email">E-mail:</label><br>
+                <input type="text" name="email-field" id="email"><br>
+                <label for="phone">Phone:</label><br>
+                <input type="text" name="phone" id="phone"><br>
+            </div>
+
+            <!-- Message -->
+            <div class="message">
+                <label for="message">Message:</label><br>
+                <textarea name="message-field" id="message" rows="10" cols="20"></textarea><br>
+            </div>
+
+            <!-- Submit -->
+            <input class="submit" type="submit" value="Submit">
+        </div>
     
 </body>
 </html>
