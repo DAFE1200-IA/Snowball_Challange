@@ -284,6 +284,7 @@ form{
 
 #packageIndex p{
     background-color: whitesmoke;
+    padding: 1em;
 }
 
 #packageIndex a{
@@ -360,7 +361,6 @@ form{
 }
 
 /*PACKAGES*/
-
 .allPackages{
     position: relative;
     top: 3em;  
