@@ -23,7 +23,7 @@ header {
     background-color: white;
     text-align: center;
     position: fixed;
-    z-index: 999; 
+    z-index: 999;
     width: 100%;
 }
 
@@ -31,7 +31,7 @@ header {
     position: relative;
     bottom: 0.2em;
     text-align: right;
-    margin-right: 0.6em; 
+    margin-right: 0.6em;
 }
 
 .logo a {
@@ -58,7 +58,7 @@ header img {
 .nav-hamburger {
     position: absolute !important;
     top: -9999px !important;
-    left: -9999px !important;    
+    left: -9999px !important;
 }
 
 .nav-hamburger:focus ~ .nav-hamburger-label {
@@ -76,7 +76,7 @@ header img {
 }
 
 .nav-hamburger-label span,
-.nav-hamburger-label span::before, 
+.nav-hamburger-label span::before,
 .nav-hamburger-label span::after {
     display: block;
     background: var(--blue);
@@ -92,7 +92,7 @@ header img {
     position: absolute;
 }
 
-.nav-hamburger-label span::before { 
+.nav-hamburger-label span::before {
     bottom: 0.6em;
 }
 
@@ -109,7 +109,7 @@ nav {
     width: 100%;
     transform: scale(1, 0);
     transform-origin: top;
-    transition: transform 400ms ease-in-out;  
+    transition: transform 400ms ease-in-out;
 }
 
 nav ul {
@@ -124,7 +124,7 @@ nav li {
 }
 
 nav a {
-    color: var(--blue); 
+    color: var(--blue);
     text-decoration: none;
     font-size: 0.7em;
     text-transform: uppercase;
@@ -217,7 +217,7 @@ form{
 }
 
 @media only screen and (min-width: 480px) {
-    
+
     form{
         width: 60%;
     }
@@ -228,7 +228,7 @@ form{
 }
 
 @media only screen and (min-width: 768px) {
-    
+
     form{
         width: 60%;
     }
@@ -239,7 +239,7 @@ form{
 }
 
 @media only screen and (min-width: 900px) {
-    
+
     #bookingForm input[type=text]{
         width: 50%;
     }
@@ -312,7 +312,7 @@ form{
     #packageIndex{
         display: flex;
         flex-direction: row;
-        justify-content: center;   
+        justify-content: center;
     }
 
     #packageIndex .insidePackageIndex{
@@ -327,7 +327,7 @@ form{
     #packageIndex{
         display: flex;
         flex-direction: row;
-        justify-content: center;   
+        justify-content: center;
     }
 
     #packageIndex .insidePackageIndex{
@@ -367,7 +367,7 @@ form{
     margin-bottom: 10em;
     padding: 0.5em 1em;
     border-radius: 3px;
-    background-color: whitesmoke; 
+    background-color: whitesmoke;
 }
 
 .banner a {
@@ -378,7 +378,7 @@ form{
 /*PACKAGES*/
 .allPackages{
     position: relative;
-    top: 3em;  
+    top: 3em;
     margin-bottom: 4em;
 }
 
@@ -426,7 +426,7 @@ form{
 @media only screen and (min-width: 400px){
     .allPackages{
         position: relative;
-        top: 3em;  
+        top: 3em;
         margin-bottom: 4em;
     }
 
@@ -441,7 +441,7 @@ form{
 @media only screen and (min-width: 750px) {
     .allPackages{
         position: relative;
-        top: 4em;  
+        top: 4em;
         margin-bottom: 4em;
     }
 
@@ -449,7 +449,7 @@ form{
         display: flex;
         flex-direction: row;
         justify-content: center;
-        position: relative;  
+        position: relative;
     }
 
     #packages .insidePackages{
@@ -463,7 +463,7 @@ form{
 @media only screen and (min-width: 1000px) {
     .allPackages{
         position: relative;
-        top: 6em;  
+        top: 6em;
         margin-bottom: 7em;
     }
 
@@ -509,7 +509,7 @@ form{
     margin-bottom: 9em;
     padding: 0.5em 1em;
     border-radius: 3px;
-    background-color: whitesmoke; 
+    background-color: whitesmoke;
 }
 
 .bookingInfo a {
@@ -559,7 +559,7 @@ form{
     }
 
     .formContent input {
-        margin: 1em 0em;  
+        margin: 1em 0em;
     }
 
     .formContent textarea {
@@ -591,7 +591,7 @@ form{
 
     .submit {
         position: relative;
-        left: 10em;       
+        left: 10em;
     }
 
     /* Contact us submit page */
@@ -614,29 +614,29 @@ form{
 
     .submittedContent p {
         font-size: 1em;
-    } 
+    }
 
 
 
-footer{
-    position: relative;
-    text-align: center;
-    bottom: 0;
-}
+    footer{
+        position: relative;
+        text-align: center;
+        bottom: 0;
+    }
 
 
-/* Responsive rules */ 
+/* Responsive rules */
 @media screen and (min-width: 700px) {
 
     /* Navigation and logo ipad */
     .logo {
         bottom: 0;
         text-align: right;
-        margin-right: 1em; 
+        margin-right: 1em;
     }
-    
+
     .logo a {
-        font-size: 0.78em;  
+        font-size: 0.78em;
     }
 
     header img {
@@ -653,7 +653,7 @@ footer{
     }
 
     .nav-hamburger-label span,
-    .nav-hamburger-label span::before, 
+    .nav-hamburger-label span::before,
     .nav-hamburger-label span::after {
         height: 1.6px;
         width: 2.5em;
@@ -665,7 +665,7 @@ footer{
         position: absolute;
     }
 
-    .nav-hamburger-label span::before { 
+    .nav-hamburger-label span::before {
         bottom: 0.8em;
     }
 
@@ -684,26 +684,43 @@ footer{
         top: 3.5em;
         font-size: 1.4em;
         }
-        
+
     .banner p {
         position: relative;
         top: 5.3em;
         font-size: 1em;
         margin: 1.5em 7em;
         margin-bottom: 12em;
-        padding: 2.5em; 
+        padding: 2.5em;
         }
+
+    /* Contact us submitted page Ipad */
+    .submittedContent {
+        position: relative;
+        top: 9em;
+        margin: 3em;
+        padding: 3em;
+
     }
+
+    .submittedContent h1 {
+        font-size: 1.4em;
+    }
+
+    .submittedContent p {
+        font-size: 1em;
+    }
+}
 
 
 @media screen and (min-width: 1300px) {
-    
+
     /* Navigation and logo esktop */
     .logo {
         top: 0em;
-        margin-right: 0.9em; 
+        margin-right: 0.9em;
     }
-    
+
     .logo a {
         text-decoration: none;
         font-size: 0.9em;
@@ -743,13 +760,45 @@ footer{
         top: 3.2em;
         font-size: 2em;
         }
-        
+
     .banner p {
         position: relative;
         top: 6em;
         font-size: 1.4em;
         margin: 1em 15em;
         margin-bottom: 14em;
-        padding: 4em; 
+        padding: 4em;
         }
+
+    /* Contact us submitted page */
+   .submittedContent {
+        position: relative;
+        top: 9em;
+        margin: 3em;
+        padding: 3em;
+
     }
+
+    .submittedContent h1 {
+        font-size: 1.4em;
+    }
+
+    .submittedContent p {
+        font-size: 1em;
+    }
+    .submittedContent {
+        position: relative;
+        top: 11em;
+        margin: 2em 15em;
+        padding: 3em;
+    }
+
+    .submittedContent h1 {
+        font-size: 1.6em;
+    }
+
+    .submittedContent p {
+        font-size: 1.3em;
+    }
+
+}
