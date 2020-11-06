@@ -164,9 +164,7 @@ nav a:hover {
     align-items: center;
     text-align: center;
     position: relative;
-    background-image: url('AdobeStock_OiaVillage.jpeg'); /*Source: LuchschenH (2020). 
-    Panorama of Oia village with colorful houses , view of Oia town, Santorini island, Greece. 
-    Found at: https://stock.adobe.com/no/134209719 */
+    background-image: url('AdobeStock_OiaVillage.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
