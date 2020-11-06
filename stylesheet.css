@@ -391,7 +391,7 @@ form{
         background-color: rgba(115, 176, 209, 1);
     }
 
-    form {
+    .contactForm {
         background-color: white;
         display: flexbox;
         height: auto;
@@ -403,12 +403,12 @@ form{
         border-radius: 5px;
     }
 
-    form h1 {
+    .contactForm h1 {
         font-weight: 100;
         color: rgb(50, 84, 114);
     }
 
-    form p {
+    .contactForm p {
         text-align: left;
     }
 
@@ -604,6 +604,10 @@ form{
     .submittedContent h1 {
         font-size: 1.4em;
     }
+
+    .submittedContent p {
+        font-size: 1em;
+    }
 }
 
     @media only screen and (min-width: 750px) {
@@ -729,11 +733,6 @@ form{
             margin-left: 10em;
             margin-right: 10em;
         }
-
-        /*Submit page*/
-        .submittedContent p {
-            font-size: 1em;
-        }
     }
 
 
@@ -777,14 +776,6 @@ form{
         font-size: 0.9em;
     }
     
-    /* Contact us submitted page desktop */
-    .submittedContent {
-        position: relative;
-        top: 11em;
-        margin: 2em 15em;
-        padding: 3em;
-    }
-
     /* About us desktop */
     .banner h1 {
         position: relative;
@@ -802,13 +793,6 @@ form{
     }
 
     /* Contact us submitted page desktop */
-    .submittedContent {
-        position: relative;
-        top: 9em;
-        margin: 3em;
-        padding: 3em;
-    }
-
     .submittedContent {
         position: relative;
         top: 11em;
