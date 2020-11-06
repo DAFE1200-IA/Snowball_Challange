@@ -701,7 +701,6 @@ form{
         top: 9em;
         margin: 3em;
         padding: 3em;
-
     }
 
     .submittedContent h1 {
@@ -772,21 +771,6 @@ form{
         }
 
     /* Contact us submitted page desktop */
-   .submittedContent {
-        position: relative;
-        top: 9em;
-        margin: 3em;
-        padding: 3em;
-
-    }
-
-    .submittedContent h1 {
-        font-size: 1.4em;
-    }
-
-    .submittedContent p {
-        font-size: 1em;
-    }
     .submittedContent {
         position: relative;
         top: 11em;
