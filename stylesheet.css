@@ -477,9 +477,9 @@ form{
 
     #packages .insidePackages{
         width: 45%;
-        height: 33em;
+        height: 35em;
         background-color: whitesmoke;
-        margin: 0 0.8em 1em;
+        margin: 0 0.8em 3em;
     }
 
     #packages .insidePackages p {
