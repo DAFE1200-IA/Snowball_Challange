@@ -385,31 +385,31 @@ form{
 }
 
 
-/*CONTENT CONTACT US PAGE*/
-    /* Mobile first */
-    .backgroundContact{
-        background-color: rgba(115, 176, 209, 1);
-    }
-
-    .contactForm {
-        background-color: white;
-        display: flexbox;
-        height: auto;
-        width: auto;
-        position: relative;
-        top: 5em;
-        margin: 1em;
-        padding: 1em;
-        border-radius: 5px;
+/* CONTACT US PAGE */
+.contactForm {
+    background-color: whitesmoke;
+    display: flexbox;
+    height: auto;
+    width: auto;
+    position: relative;
+    top: 5em;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 5px;
     }
 
     .contactForm h1 {
         font-weight: 100;
-        color: rgb(50, 84, 114);
+        font-size: 1.4em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--blue);
     }
 
     .contactForm p {
-        text-align: left;
+        text-align: center;
+        font-size: 1em;
+        padding-bottom: 1em;
     }
 
     .formContent {
