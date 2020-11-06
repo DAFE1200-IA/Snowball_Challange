@@ -153,8 +153,11 @@ nav a:hover {
 
 /* BOOKING FORM */
 #bookingForm h2{
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
     font-size: 0.9em;
-    font-weight: 550;
+    letter-spacing: 0.04em;
     padding: 1em;
 }
 
@@ -246,8 +249,11 @@ form{
     }
 
     #bookingForm h2{
-        font-size: 1.2em;
-        font-weight: 550;
+        text-align: center;
+        font-weight: 100;
+        text-transform: uppercase;
+        font-size: 1.3em;
+        letter-spacing: 0.08em;
     }
 }
 
@@ -266,6 +272,14 @@ form{
     height: 30em;
     background-color: whitesmoke;
     margin: 1em 0.8em 1em;
+}
+
+.insidePackageIndex h2{
+        text-align: center;
+        font-weight: 100;
+        text-transform: uppercase;
+        font-size: 1.2em;
+        letter-spacing: 0.08em;
 }
 
 #packageIndex p{
@@ -370,6 +384,14 @@ form{
     margin: 1em 0.8em 1em;
 }
 
+.insidePackages h2{
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 0.08em;
+}
+
 #packages p{
     background-color: whitesmoke;
 }
@@ -435,6 +457,7 @@ form{
         flex-direction: row;
         justify-content: center;
         position: relative;
+        padding-bottom: 5em;
     }
 
     #packages .insidePackages{
@@ -442,6 +465,10 @@ form{
         height: 33em;
         background-color: whitesmoke;
         margin: 0 0.8em 1em;
+    }
+
+    #packages .insidePackages p {
+        padding-bottom: 2em;
     }
 }
 
