@@ -204,6 +204,7 @@ form{
     cursor: pointer;
     background-color: whitesmoke;
     text-transform: uppercase;
+    position: relative;
 }
 
 #bookingForm input[type=submit]:hover {
@@ -567,7 +568,7 @@ form{
         bottom: 1em;
     }
 
-    .submit {
+    .formContent.submit {
         position: relative;
         left: 10em;
     }
