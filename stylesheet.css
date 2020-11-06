@@ -394,6 +394,7 @@ form{
     position: relative;
     top: 5em;
     margin: 1em;
+    margin-top: 0;
     padding: 1em;
     border-radius: 5px;
     }
