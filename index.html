@@ -30,53 +30,33 @@
 
 <!-- CONTENT -->
 <main>
-
-<!-- Background image -->
-<img src="AdobeStock_OiaVillage.jpeg" alt="Picture of houses in Santorini, Greece" width="100%" height="auto">
-
 <!-- Dropdown menu for booking screen traveling -->
 <div id="bookingForm">
     <form action="booking.html">
 
-    <!-- Travel from and to -->
-    <label for="travelFrom">Travel from:</label>
+    <h2>Travel the world from your couch</h2>
+
+    <!-- Travel from -->
+    <label for="travelFrom">Address:</label>
         <br>
     <input type="text" id="travelFrom" name="travelFrom_field"> 
         <br>
         <br>
 
     <!-- Packages -->
-    <label for="package">Package:</label>
+    <label for="browser"> Package:</label>
         <br>
-    <input list="package" type="text" name="package">
-    <datalist id="package">
-        <select>
+    <input list="package" type="text" name="package" id="browser">
+        <datalist id="package">
             <option value="Romantic tour of ancient Rome">Romantic tour of ancient Rome</option>
             <option value="Explore the Colosseum">Explore the Colosseum</option>
             <option value="New impulses in Times Square">New impulses in Times Square</option>
             <option value="The New York Friends tour">The New York Friends tour</option>
             <option value="Enjoy the sunset at Oia Santorini">Enjoy the sunset at Oia Santorini</option>
             <option value="Hike to the top of the Santorini volcano">Hike to the top of the Santorini volcano</option>
-        </select>
-    </datalist>     
+        </datalist>
         <br>
         <br>
-
-    <!-- Duration-->
-    <div>
-        <label for="duration">Duration:</label>
-            <br>
-        <input type="radio" id="2hours" name="duration" value="2">
-        <label for="2hours">2 hours</label>
-            <br>
-        <input type="radio" id="4hours" name="duration" value="4">
-        <label for="4hours">4 hours</label>
-            <br>
-        <input type="radio" id="6hours" name="duration" value="6">
-        <label for="6hours">6 hours</label>
-    </div>
-            <br>
-
     <!-- Submit -->
         <input class="submit" type="submit" value="Book now">
     </form>

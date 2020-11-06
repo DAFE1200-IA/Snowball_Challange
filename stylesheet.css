@@ -153,21 +153,36 @@ nav a:hover {
 
 /* BOOKING FORM */
 #bookingForm h2{
-    font-size: 1.1em;
-    padding-top: 1em;
+    font-size: 0.9em;
+    font-weight: 550;
+    padding: 1em;
 }
 
 #bookingForm{
     font-family: 'railway', sans-serif;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%;
-    background-color: white;
+    position: relative;
+    background-image: url('AdobeStock_OiaVillage.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     padding-bottom: 1.5em;
-    padding-top: 1.5em;
+    padding-top: 2em;
     margin-bottom: 0;
+}
+
+form{
+    position: relative;
+    text-align: center;
+    top: 2em;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.726);
+    margin: 2em;
+    padding-bottom: 1.5em;
 }
 
 #bookingForm label{
@@ -176,10 +191,11 @@ nav a:hover {
 }
 
 #bookingForm input[type=text]{
+    position: relative;
     padding: 0.4em;
     border: 1px solid #ccc;
     border-radius: 0.4em;
-    width: 15em;
+    width: 80%;
 }
 
 #bookingForm input[type=submit]{
@@ -193,11 +209,47 @@ nav a:hover {
 }
 
 #bookingForm input[type=submit]:hover {
-    background-color: darkblue;
+    background-color: var(--blue);
     color: white;
 }
 
+@media only screen and (min-width: 480px) {
+    
+    form{
+        width: 60%;
+    }
 
+    #bookingForm input[type=text]{
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    
+    form{
+        width: 60%;
+    }
+
+    #bookingForm input[type=text]{
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    
+    #bookingForm input[type=text]{
+        width: 50%;
+    }
+
+    form{
+        width: 45%;
+    }
+
+    #bookingForm h2{
+        font-size: 1.2em;
+        font-weight: 550;
+    }
+}
 
 /*PACKAGE OPTIONS INDEX*/
 #packageIndex{
@@ -213,17 +265,16 @@ nav a:hover {
     width: 100%;
     height: 30em;
     background-color: whitesmoke;
-    margin: 0 0.8em 1em;
+    margin: 1em 0.8em 1em;
 }
 
 #packageIndex p{
     background-color: whitesmoke;
-    padding: 1em;
 }
 
 #packageIndex a{
     text-decoration: none;
-    color: rgb(80, 157, 170);
+    color: var(--blue);
     font-weight: 550;
 }
 
@@ -295,30 +346,37 @@ nav a:hover {
 }
 
 /*PACKAGES*/
+
+.allPackages{
+    position: relative;
+    top: 3em;  
+    margin-bottom: 4em;
+}
+
 #packages{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 3em 0 3em;
+    position: relative;
 }
 
 #packages .insidePackages{
     width: 100%;
-    height: 30em;
+    height: 26em;
+    padding-bottom: 2em;
     background-color: whitesmoke;
-    margin: 0 0.8em 1em;
+    margin: 1em 0.8em 1em;
 }
 
 #packages p{
     background-color: whitesmoke;
-    padding: 1em;
 }
 
 #packages a{
     text-decoration: none;
-    color: rgb(80, 157, 170);
+    color: var(--blue);
     font-weight: 550;
 }
 
@@ -329,39 +387,59 @@ nav a:hover {
 
 /*Make it responsive*/
 @media only screen and (min-width: 400px){
+    .allPackages{
+        position: relative;
+        top: 3em;  
+        margin-bottom: 4em;
+    }
+
     #packages .insidePackages{
         width: 90%;
-        height: 32em;
+        height: 33em;
         background-color: whitesmoke;
         margin: 0 0.8em 1em;
     }
 }
 
 @media only screen and (min-width: 750px) {
+    .allPackages{
+        position: relative;
+        top: 4em;  
+        margin-bottom: 4em;
+    }
+
     #packages{
         display: flex;
         flex-direction: row;
-        justify-content: center;   
+        justify-content: center;
+        position: relative;  
     }
 
     #packages .insidePackages{
         width: 45%;
-        height: 34em;
+        height: 30em;
         background-color: whitesmoke;
         margin: 0 0.8em 1em;
     }
 }
 
 @media only screen and (min-width: 1000px) {
+    .allPackages{
+        position: relative;
+        top: 6em;  
+        margin-bottom: 7em;
+    }
+
     #packages{
         display: flex;
         flex-direction: row;
-        justify-content: center;   
+        justify-content: center;
+        position: relative;
     }
 
     #packages .insidePackages{
         width: 45%;
-        height: 45em;
+        height: 33em;
         background-color: whitesmoke;
         margin: 0 0.8em 1em;
     }
