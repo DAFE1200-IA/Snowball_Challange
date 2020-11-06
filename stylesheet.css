@@ -416,7 +416,36 @@ form{
         margin-bottom: 4em;
     }
 
-/* Responsive rules */ 
+    /* CONTACT US COMITTED PAGE */
+   .submittedContent {
+    position: relative;
+    top: 7em;
+    margin: 1em;
+    border-radius: 5px;
+    padding: 0.9em;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+    .submittedContent h1 {
+        font-size: 1.2em;
+        font-weight: 100;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        color: var(--blue);
+    }
+
+    .submittedContent p {
+        font-size: 1em;
+    }
+
+    footer{
+        position: relative;
+        text-align: center;
+        bottom: 0;
+    }
+
+/* RESPONSIVE RULES */ 
 @media only screen and (min-width: 400px){
     /*Packages Index*/
     #packageIndex .insidePackageIndex{
@@ -492,35 +521,6 @@ form{
     .submit {
         position: relative;
         left: 10em;
-    }
-
-    /* Contact us submit page */
-   .submittedContent {
-        position: relative;
-        top: 7em;
-        margin: 1em;
-        border-radius: 5px;
-        padding: 0.9em;
-        text-align: center;
-        background-color: whitesmoke;
-    }
-
-    .submittedContent h1 {
-        font-size: 1.2em;
-        font-weight: 100;
-        letter-spacing: 0.09em;
-        text-transform: uppercase;
-        color: var(--blue);
-    }
-
-    .submittedContent p {
-        font-size: 1em;
-    }
-
-    footer{
-        position: relative;
-        text-align: center;
-        bottom: 0;
     }
 }
 
