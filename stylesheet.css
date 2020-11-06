@@ -594,17 +594,30 @@ form{
         left: 10em;       
     }
 
-    /* SUBMIT PAGE */
+    /* Contact us submit page */
    .submittedContent {
         position: relative;
-        top: 5em;
+        top: 7em;
         margin: 1em;
-        border: 1px solid black;
         border-radius: 5px;
-        padding: 0.5em;
+        padding: 0.9em;
         text-align: center;
+        background-color: whitesmoke;
     }
-    
+
+    .submittedContent h1 {
+        font-size: 1.2em;
+        font-weight: 100;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+    }
+
+    .submittedContent p {
+        font-size: 1em;
+    } 
+
+
+
 footer{
     position: relative;
     text-align: center;
